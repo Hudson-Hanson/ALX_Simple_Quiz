@@ -1,15 +1,23 @@
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    margin: 0;
 }
 
 #quiz-container {
     max-width: 600px;
-    margin: auto;
+    width: 100%;
     padding: 20px;
+    background: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 #quiz-question {
@@ -27,7 +35,7 @@ label {
 }
 
 #submit-answer {
-    display: block;
+    display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #007bff;
@@ -36,6 +44,7 @@ label {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s;
 }
 
 #submit-answer:hover {
@@ -45,4 +54,6 @@ label {
 #feedback {
     margin-top: 20px;
     font-size: 18px;
+    font-weight: bold;
+    color: #333;
 }
